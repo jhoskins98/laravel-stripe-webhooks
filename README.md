@@ -185,6 +185,9 @@ class ChargeSource implements ShouldQueue
         // do your work here
 
         // you can access the payload of the webhook call with `$webhookCall->payload`
+        
+        // Example of use of payload access for charge.failed
+        // $failure_code = $this->webhookCall->payload['data']['object']['failure_code'];
     }
 }
 ```
